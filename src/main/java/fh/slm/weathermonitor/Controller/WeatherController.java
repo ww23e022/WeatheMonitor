@@ -14,6 +14,6 @@ public class WeatherController {
 
     @PostMapping("/status/{status}")
     public String setWeatherStatus(@PathVariable("status") String status) {
-        return WeatherMonitor.setWeatherStatus(status);
+        return WeatherMonitor.setWeatherStatus( status );
     }
 }
