@@ -13,4 +13,8 @@ public class WeatherMonitor {
         }
         return weatherStatus;
     }
+
+    public static void clearStatus() {
+        weatherStatus = "Unknown";
+    }
 }
