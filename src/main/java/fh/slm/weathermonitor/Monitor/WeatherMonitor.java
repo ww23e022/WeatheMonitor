@@ -1,7 +1,8 @@
 package fh.slm.weathermonitor.Monitor;
 
 public class WeatherMonitor {
-    private static String weatherStatus = "Unknown";
+    private static final String INITIAL_STATUS = "Unknown";
+    private static String weatherStatus = INITIAL_STATUS;
 
     public static String getWeatherStatus() {
         return weatherStatus;
@@ -13,4 +14,10 @@ public class WeatherMonitor {
         }
         return weatherStatus;
     }
+
+    public static void clearStatus() {
+        weatherStatus = INITIAL_STATUS;
+    }
+
+
 }
